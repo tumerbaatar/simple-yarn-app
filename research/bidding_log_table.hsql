@@ -1,0 +1,25 @@
+CREATE TABLE IF NOT EXISTS bid.test (
+bid_id String,
+timestamp_ String,
+ipinyou_id String,
+user_agent String,
+ip String,
+region_id int,
+city_id int,
+ad_exchange int,
+domain String,
+url String,
+anonymous_url String,
+ad_slot_id String,
+ad_slot_width int,
+ad_slot_height int,
+ad_slot_visibility String,
+ad_slot_format String,
+ad_slot_floor_price Decimal,
+creative_id String,
+bidding_price Decimal,
+advertiser_id int,
+user_profile_ids String
+)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t' STORED AS TEXTFILE;
+
